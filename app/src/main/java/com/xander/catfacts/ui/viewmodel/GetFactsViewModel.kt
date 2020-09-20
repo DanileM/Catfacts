@@ -62,7 +62,7 @@ class GetFactsViewModel(
             enabledButton = true
             Toast.makeText(App.getInstance(), "No internet. Got data from cache", Toast.LENGTH_LONG).show()
             coroutineScope.launch {
-                liveDataShowFacts.postValue(catFactsDao.getLast() as ArrayList<CatFact>)
+                liveDataShowFacts.postValue(catFactsDao.getLast().reversed() as ArrayList<CatFact>)
             }
         }
     }
