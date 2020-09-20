@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cat facts</string>
+    <string name="db_name">facts-db</string>
+    <string name="get_cat_facts">Cat Facts</string>
+</resources>

@@ -1,0 +1,41 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="showFactsViewModel"
+            type="com.xander.catfacts.ui.viewmodel.ShowFactsViewModel" />
+
+        <variable
+            name="dataChoiceItem"
+            type="com.xander.catfacts.model.CatFact" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:setImage="@{dataChoiceItem.picture}" />
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{dataChoiceItem.fact}"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
