@@ -5,11 +5,11 @@
 
         <variable
             name="showFactsViewModel"
-            type="com.xander.catfacts.ui.viewmodel.ShowFactsViewModel" />
+            type="com.xander.catfacts.presentation.showfacts.ShowFactsViewModel" />
 
         <variable
             name="dataChoiceItem"
-            type="com.xander.catfacts.model.CatFact" />
+            type="com.xander.catfacts.data.model.CatFact" />
     </data>
 
     <androidx.cardview.widget.CardView

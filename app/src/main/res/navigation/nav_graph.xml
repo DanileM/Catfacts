@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/getFactsFragment"
-        android:name="com.xander.catfacts.ui.fragment.GetFactsFragment"
+        android:name="com.xander.catfacts.presentation.getfacts.GetFactsFragment"
         android:label="GetFactsFragment"
         tools:layout="@layout/fragment_get_facts">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/showFactsFragment"
-        android:name="com.xander.catfacts.ui.fragment.ShowFactsFragment"
+        android:name="com.xander.catfacts.presentation.showfacts.ShowFactsFragment"
         android:label="ShowFactsFragment"
         tools:layout="@layout/fragment_show_facts">
     </fragment>

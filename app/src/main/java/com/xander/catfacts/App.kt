@@ -12,15 +12,14 @@ class App : Application() {
         super.onCreate()
 
         instance = this
-        startKoin(this, listOf(appModule, viewModelModule))
-    }
+        startKoin(this@App, listOf(appModule, viewModelModule))
+}
 
     companion object {
         private var instance: App? = null
 
-        fun getInstance(): Context {
-            return instance!!.applicationContext
-        }
+        fun getInstance(): Context = instance!!.applicationContext
+
     }
 
 }
